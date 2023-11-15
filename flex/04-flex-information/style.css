@@ -1,26 +1,79 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
-}
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 900;
 
-img {
-  width: 100px;
-  height: 100px;
-}
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* do not edit this footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+  }
 
-.title {
-  font-size: 36px;
-  font-weight: 900;
-}
+  .layout   {
+    display: flex;
+    gap:32px;
+    flex-direction: column;
+  }
+  .items {
+    display:flex;
+    gap:52px;
+  }
 
-/* do not edit this footer */
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eee;
-}
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .text     {
+    text-align: center;
+  }
+
+  img   {
+    max-width: 200px;
+  }
+
+
+
+  /* SOLUTION 
+
+  Solution is far more elegant and economical. Leaving my solution in place so I can see the difference
+
+body {
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 32px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+  }
+  
+  .info {
+    max-width: 200px;
+  }
+
+  */

@@ -1,25 +1,73 @@
 .header  {
-  font-family: monospace;
-  background: papayawhip;
-}
+    font-family: monospace;
+    background: papayawhip;
 
-.logo {
-  font-size: 48px;
-  font-weight: 900;
-  color: tomato;
-  background: white;
-  padding: 4px 32px;
+    padding: 8px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
+  
 
-ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
+  .logo {
+    font-size: 48px;
+    font-weight: 900;
+    color: tomato;
+    background: white;
+    padding: 4px 32px;
+ 
+
+  }
+  
+  ul {
+    /* this removes the dots on the list items*/
+    list-style-type: none;
+
+    display: flex; 
+    gap:8px;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    font-size: 22px;
+    background: white;
+    padding: 8px;
+    /* this removes the line under the links */
+    text-decoration: none;
+   }
+
+
+   /*
+
+Previous included excess css, which wasn't necessary. However, my solution avoided collisions in the objects. 
+
+
+<!--
+
+            header
+left-links / logo / right-links
+    ul                 ul
+li  li  li    /     li  li  li
+
+-->
+
+  .left-links ul {
+    justify-content: flex-start;
+  }
+  .right-links ul {
+    justify-content: flex-end;
+  }
+  
+ .left-links  { 
+    display: flex;  
+    flex:1;
+
 }
+.right-links {
+    flex:1;
+    display: flex; 
+  }
 
-a {
-  font-size: 22px;
-  background: white;
-  padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
+.li {   
+  flex:1;
 }
